@@ -34,8 +34,8 @@ export default function Navbar() {
         isScrolled ? 'bg-black/90 backdrop-blur-sm' : 'bg-transparent'
       )}
     >
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold tracking-tighter z-50">
+      <div className="container mx-auto px-4 py-4 flex items-center justify-between relative">
+        <Link href="/" className="text-2xl font-bold tracking-tighter">
           EMINEM
         </Link>
 
@@ -52,7 +52,7 @@ export default function Navbar() {
         </nav>
 
         <button
-          className="md:hidden z-50 text-white"
+          className="md:hidden text-white"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -60,8 +60,8 @@ export default function Navbar() {
         </button>
 
         {isMenuOpen && (
-          <div className="fixed inset-0 bg-black/95 flex flex-col items-center justify-center md:hidden">
-            <nav className="flex flex-col items-center space-y-8">
+          <div className="absolute top-full left-0 right-0 bg-black/95 flex flex-col items-center justify-center md:hidden">
+            <nav className="flex flex-col items-center space-y-8 py-8">
               {NAV_LINKS.map((link) => (
                 <Link
                   key={link.href}

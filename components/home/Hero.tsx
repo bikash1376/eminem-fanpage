@@ -28,13 +28,23 @@ export default function Hero() {
     <div className="h-screen relative overflow-hidden">
       <div 
         ref={heroRef} 
-        className="absolute inset-0"
+        className="absolute inset-0 w-full h-full"
       >
         <div className="relative w-full h-full">
+          {/* Mobile Video */}
           <iframe
-            src="https://www.youtube.com/embed/PV6uLfBOqOE?si=Zi-n5k3R6J-Ayj86&start=18&autoplay=1&mute=1&controls=0&loop=1&playlist=PV6uLfBOqOE&modestbranding=1&rel=0"
+            src="https://www.youtube.com/embed/78LJB8Tes8k?autoplay=1&mute=1&controls=0&loop=1&playlist=78LJB8Tes8k&modestbranding=1&rel=0&enablejsapi=0&origin=null&widget_referrer=null&disablekb=1&fs=0&iv_load_policy=3"
+            title="some lyrics from without me"
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-[120%] md:hidden pointer-events-none object-cover"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
+          {/* Desktop Video */}
+          <iframe
+            src="https://www.youtube.com/embed/PV6uLfBOqOE?autoplay=1&mute=1&controls=0&loop=1&playlist=PV6uLfBOqOE&modestbranding=1&rel=0&enablejsapi=0&origin=null&widget_referrer=null&disablekb=1&fs=0&iv_load_policy=3&start=14"
             title="YouTube video player"
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[180%] h-[180%] pointer-events-none"
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:block w-[180%] h-[180%] pointer-events-none object-cover"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
