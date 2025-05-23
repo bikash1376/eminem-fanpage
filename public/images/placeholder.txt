@@ -1,0 +1,1 @@
+This file exists to ensure the images directory is created. The actual images will be loaded from external URLs.
