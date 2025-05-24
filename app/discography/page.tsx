@@ -51,7 +51,7 @@ export default function DiscographyPage() {
   return (
     <div className="min-h-screen bg-black pt-20">
       <div className="container mx-auto px-4 py-20">
-        <h1 className="text-6xl md:text-8xl font-bold mb-16 text-center">DISCOGRAPHY</h1>
+        <h1 className="md:text-8xl text-4xl font-bold mb-16 text-center">DISCOGRAPHY</h1>
         <div className="w-20 h-1 bg-white mx-auto mb-12"></div>
         
         <div className="flex justify-center gap-4 mb-12">
@@ -71,7 +71,7 @@ export default function DiscographyPage() {
           </Button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="m-6 md:m-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {ALBUMS.filter(album => selectedType === 'all' || album.type === selectedType).map((album) => (
             <div key={album.id} className="group relative">
               <div className="relative aspect-square overflow-hidden">

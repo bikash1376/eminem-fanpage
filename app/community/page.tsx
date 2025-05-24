@@ -7,7 +7,7 @@ export default function CommunityPage() {
   return (
     <div className="min-h-screen bg-black pt-20">
       <div className="container mx-auto px-4 py-20">
-        <h1 className="text-6xl md:text-8xl font-bold mb-16 text-center">COMMUNITY</h1>
+        <h1 className="md:text-8xl text-4xl font-bold mb-16 text-center">COMMUNITY</h1>
         <div className="w-20 h-1 bg-white mx-auto mb-12"></div>
 
         <div className="max-w-4xl mx-auto">
